@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#33475b"/></marker></defs>
+<rect width="1400" height="800" fill="#ffffff"/>
+<text x="700" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1b2a41">Architecture Diagram - Public Bus Live Tracking &amp; Crowding Estimator</text>
+<text x="700" y="56" text-anchor="middle" font-size="13" fill="#5a6b7d">Problem Statement #24 - Smart Cities, Transport &amp; Logistics - PES1UG24CS269 - BPS#24</text>
+<text x="125.0" y="92" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#7a8898">EXTERNAL SOURCES</text>
+<text x="375.0" y="92" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#7a8898">INGESTION</text>
+<text x="740.0" y="92" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#7a8898">PROCESSING</text>
+<text x="1010.0" y="92" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#7a8898">DATA</text>
+<text x="1265.0" y="92" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#7a8898">ALERT DELIVERY</text>
+<rect x="30" y="130" width="190" height="80" rx="10" fill="#fdf1e3" stroke="#b86a14" stroke-width="1.6"/>
+<text x="125.0" y="166.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Bus GPS Feed</text>
+<text x="125.0" y="186.0" text-anchor="middle" font-size="11.5" fill="#44546a">(external actor)</text>
+<rect x="30" y="330" width="190" height="80" rx="10" fill="#fdf1e3" stroke="#b86a14" stroke-width="1.6"/>
+<text x="125.0" y="366.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Ticketing Sensor / System</text>
+<text x="125.0" y="386.0" text-anchor="middle" font-size="11.5" fill="#44546a">(external actor)</text>
+<rect x="270" y="130" width="210" height="80" rx="10" fill="#e8f0fb" stroke="#2f5f9e" stroke-width="1.6"/>
+<text x="375.0" y="166.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">GPS Telemetry Ingestion</text>
+<text x="375.0" y="186.0" text-anchor="middle" font-size="11.5" fill="#44546a">UC-02 · FR-001 · every 5 s</text>
+<rect x="270" y="330" width="210" height="80" rx="10" fill="#e8f0fb" stroke="#2f5f9e" stroke-width="1.6"/>
+<text x="375.0" y="366.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Ticketing Data Ingestion</text>
+<text x="375.0" y="386.0" text-anchor="middle" font-size="11.5" fill="#44546a">feeds UC-04 · FR-003</text>
+<rect x="530" y="110" width="50" height="330" rx="10" fill="#eef1f5" stroke="#5a6b7d" stroke-width="1.6"/>
+<text transform="translate(560,275) rotate(-90)" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2a41">Event Stream / Message Queue</text>
+<rect x="630" y="110" width="220" height="80" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="740.0" y="146.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">ETA Engine</text>
+<text x="740.0" y="166.0" text-anchor="middle" font-size="11.5" fill="#44546a">UC-03 · FR-001</text>
+<rect x="630" y="220" width="220" height="80" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="740.0" y="256.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Crowding Estimator</text>
+<text x="740.0" y="276.0" text-anchor="middle" font-size="11.5" fill="#44546a">UC-04 · FR-003 · Low / Medium / High</text>
+<rect x="630" y="330" width="220" height="80" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="740.0" y="366.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Delay &amp; Alert Engine</text>
+<text x="740.0" y="386.0" text-anchor="middle" font-size="11.5" fill="#44546a">UC-06 · FR-005 · delay &gt; 5 min or High</text>
+<rect x="910" y="110" width="200" height="200" rx="10" fill="#f1eafa" stroke="#6b46a3" stroke-width="1.6"/>
+<text x="1010.0" y="206.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Live State Store</text>
+<text x="1010.0" y="226.0" text-anchor="middle" font-size="11.5" fill="#44546a">location · ETA · crowding · delay</text>
+<rect x="910" y="340" width="200" height="70" rx="10" fill="#f1eafa" stroke="#6b46a3" stroke-width="1.6"/>
+<text x="1010.0" y="371.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Route &amp; Schedule DB</text>
+<text x="1010.0" y="391.0" text-anchor="middle" font-size="11.5" fill="#44546a">stops, timetables</text>
+<rect x="1170" y="330" width="190" height="80" rx="10" fill="#e3f4f6" stroke="#1b7f8c" stroke-width="1.6"/>
+<text x="1265.0" y="366.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Alert Notification Service</text>
+<text x="1265.0" y="386.0" text-anchor="middle" font-size="11.5" fill="#44546a">delivery within 15 s</text>
+<rect x="630" y="490" width="730" height="70" rx="10" fill="#e3f4f6" stroke="#1b7f8c" stroke-width="1.6"/>
+<text x="995.0" y="521.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">API Gateway · Live Status &amp; Fleet Monitoring Services</text>
+<text x="995.0" y="541.0" text-anchor="middle" font-size="11.5" fill="#44546a">FR-002 · FR-004 · NFR-002 (propagate updates within 10 s)</text>
+<rect x="700" y="620" width="260" height="80" rx="10" fill="#fff8d6" stroke="#a88a00" stroke-width="1.6"/>
+<text x="830.0" y="656.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Commuter App (Web / Mobile)</text>
+<text x="830.0" y="676.0" text-anchor="middle" font-size="11.5" fill="#44546a">Actor: Commuter · UC-01 View Live Bus Status</text>
+<rect x="1060" y="620" width="290" height="80" rx="10" fill="#fff8d6" stroke="#a88a00" stroke-width="1.6"/>
+<text x="1205.0" y="656.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2a41">Fleet Controller Dashboard</text>
+<text x="1205.0" y="676.0" text-anchor="middle" font-size="11.5" fill="#44546a">Actor: Fleet Controller · UC-05 Monitor Fleet</text>
+<rect x="30" y="735" width="1330" height="44" rx="8" fill="#f4f6f8" stroke="#9aa7b4" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="695" y="762" text-anchor="middle" font-size="12.5" fill="#33475b"><tspan font-weight="700">Cross-cutting:</tspan>  TLS + authentication/authorisation (NFR-001 security)  ·  horizontal scaling &amp; load balancing for 1,000 vehicles (NFR-001)  ·  latency monitoring &amp; logs (NFR-002)</text>
+<path d="M220,170 L270,170" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M220,370 L270,370" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M480,170 L530,170" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M480,370 L530,370" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M580,150 L630,150" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M580,260 L630,260" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M580,370 L630,370" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M850,150 L910,150" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M850,260 L910,260" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<path d="M850,380 L910,380" fill="none" stroke="#33475b" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="852" y="372" font-size="11" fill="#33475b" font-style="italic">reads schedule</text>
+<path d="M740,410 L740,450 L1265,450 L1265,410" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<text x="900" y="444" font-size="11" fill="#33475b" font-style="italic">alert event</text>
+<path d="M1110,200 L1140,200 L1140,490" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<text x="1145" y="330" font-size="11" fill="#33475b" font-style="italic">reads</text>
+<path d="M1300,410 L1300,490" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<text x="1306" y="455" font-size="11" fill="#33475b" font-style="italic">push</text>
+<path d="M830,560 L830,620" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<text x="838" y="596" font-size="11" fill="#33475b" font-style="italic">live status</text>
+<path d="M1205,560 L1205,620" fill="none" stroke="#33475b" stroke-width="1.8"  marker-end="url(#a)"/>
+<text x="1213" y="596" font-size="11" fill="#33475b" font-style="italic">fleet view + alerts</text>
+</svg>
