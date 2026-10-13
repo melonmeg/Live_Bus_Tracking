@@ -1,16 +1,34 @@
-# GitHub Copilot Generated Code
+# Public Bus Live Tracking & Crowding Estimator
 
-**Status: pending** — this part of the assignment has not been completed yet.
+A small Python console app that simulates five buses on a six-stop route. It
+uses generated GPS positions and ticketing-sensor passenger counts; no external
+APIs or third-party Python packages are required.
 
-## What goes here
-- Screenshots of the code generated with GitHub Copilot (prompts and generated output), **or**
-- A link to the repository containing the Copilot-generated code.
+## Run
 
-## To fill in
-| Item | Value |
-|---|---|
-| Repository link | _TBD_ |
-| Feature(s) implemented | _TBD (e.g. ETA calculation for FR-001, crowding level for FR-003)_ |
-| Screenshots | _TBD — add images to this folder and list them here_ |
+From the project root, use Python 3.10 or newer:
 
-Suggested scope, following the requirements: GPS telemetry ingestion and ETA calculation (FR-001), crowding estimation (FR-003), and delay/crowding alert generation (FR-005). See [`../1-RE/RTM.md`](../1-RE/RTM.md).
+```powershell
+python src\main.py
+```
+
+Choose a commuter route view, a stop-specific view, or the Fleet Controller
+view. Simulated GPS and ticketing readings refresh every five seconds while
+the menu is running. The route view includes each bus's simulated coordinates,
+ETAs to upcoming stops, and crowding level. Fleet monitoring shows delay and
+crowding, with alerts for delays over five minutes and High crowding. When a
+bus has not sent GPS telemetry for more than 15 seconds, its ETA is reported as
+`Live data unavailable`.
+
+The route is a local straight-line simulation with stops at Central Station,
+Market Street, Civic Center, University, Riverside Park, and Harbor Terminal.
+ETA estimates for a stop are capped at their previous value so they never
+increase while the bus approaches it.
+
+## Tests
+
+Run the unit tests from the project root:
+
+```powershell
+python -m unittest discover -s tests -v
+```
