@@ -2,18 +2,17 @@
 
 **Project:** Public Bus Live Tracking & Crowding Estimator (PS #24) | **Student:** Meghna | PES1UG24CS269 | BPS#24
 
-The WBS follows the Jira hierarchy (Epic → Requirement/Story → Task) created in the Kanban and Scrum spaces (see `../3-Project-Creation-Screenshots/`), and groups the work into project phases.
+The WBS follows the Jira hierarchy (Epic → Requirement/Story → Task) created in the Kanban and Scrum spaces (see `../2-Project-Creation-Screenshots/`), and groups the work into project phases.
 
 ## 1. Phase view
 
 | WBS | Work package | Output |
 |---|---|---|
 | 1.0 | Requirements Engineering | Requirements table (5 FR, 2 NFR), use-case diagram, UC-01 flow spec, RTM → `1-RE/` |
-| 2.0 | Architecture & Design | Architecture diagram → `2-Architecture/` |
-| 3.0 | Project set-up & tracking | GitHub repo; Jira Kanban, Scrum and Bug Tracker spaces → `3-Project-Creation-Screenshots/` |
+| 2.0 | Architecture & Design | Architecture diagram → `3-Architecture/` |
+| 3.0 | Project set-up & tracking | GitHub repo; Jira Kanban, Scrum and Bug Tracker spaces → `2-Project-Creation-Screenshots/` |
 | 4.0 | Specification | SRS and WBS → `4-SRS-and-WBS/` |
-| 5.0 | Implementation (with GitHub Copilot) | Source code → `5-Copilot-Code/` *(pending)* |
-| 6.0 | Testing & defect fixing | Test execution, bug fix, retest → `6-Testing-Tools/` *(pending)* |
+| 5.0 | Implementation (with GitHub Copilot) | Source code → `5-Copilot-Code/` |
 
 ## 2. Implementation breakdown (Jira epics, stories, tasks)
 

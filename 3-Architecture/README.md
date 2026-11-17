@@ -1,8 +1,14 @@
-# Architecture Diagram
+# Architecture (Lab 3: Component Modelling & Architectural Pattern Selection)
 
-![Architecture diagram](architecture.png)
+## Deliverables
+| File | Description |
+|---|---|
+| [`Bus_Tracking_Component_Diagram.pdf`](Bus_Tracking_Component_Diagram.pdf) | UML component diagram: 14 components, provided (ball) and required (socket) interfaces labelled with their protocol |
+| [`Architecture_Justification.pdf`](Architecture_Justification.pdf) | One-page justification: **Layered Architecture** with an event queue between the ingestion and processing layers; two reasons, a security advantage and a performance benefit |
 
-Files: [`architecture.png`](architecture.png) (image) · [`architecture.svg`](architecture.svg) (editable vector)
+**Architectural style:** Layered (External sources → Ingestion → Messaging → Processing → Data → Serving → Presentation). Microservices and Client-Server were considered and rejected in the justification.
+
+**Interfaces shown:** IGpsFeed, ITicketingFeed, IEventStream (publish / subscribe), IStateUpdate, IScheduleQuery, IAlertEvent, IAlertPush, IStateQuery, ILiveStatusAPI, IFleetAPI.
 
 ## Components
 

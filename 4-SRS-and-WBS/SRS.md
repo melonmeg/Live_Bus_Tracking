@@ -34,7 +34,7 @@ Out of scope: ticket sales or payment, route planning/scheduling tools, driver-f
 - Requirements table: [`../1-RE/Requirements_Table.xlsx`](../1-RE/Requirements_Table.xlsx) and [`../1-RE/Requirements.md`](../1-RE/Requirements.md)
 - Use-case diagram and UC-01 flow specification: [`../1-RE/`](../1-RE/)
 - RTM: [`../1-RE/RTM.md`](../1-RE/RTM.md)
-- Architecture: [`../2-Architecture/`](../2-Architecture/README.md)
+- Architecture: [`../3-Architecture/`](../3-Architecture/README.md)
 - Work breakdown: [`WBS.md`](WBS.md)
 
 ---
@@ -42,7 +42,7 @@ Out of scope: ticket sales or payment, route planning/scheduling tools, driver-f
 ## 2. Overall description
 
 ### 2.1 Product perspective
-A standalone platform fed by two external sources (the Bus GPS Feed and the Ticketing Sensor/System) and used through a Commuter-facing app (web/mobile) and a Fleet Controller dashboard. See the architecture diagram in `2-Architecture/`.
+A standalone platform fed by two external sources (the Bus GPS Feed and the Ticketing Sensor/System) and used through a Commuter-facing app (web/mobile) and a Fleet Controller dashboard. See the architecture diagram in `3-Architecture/`.
 
 ### 2.2 Users (actors)
 | Actor | Type | Description |
